@@ -1,5 +1,4 @@
 require("dotenv").config();
-var inquirer = require("inquirer");
 var request = require("request");
 var Spotify = require('node-spotify-api');
 var fs = require("fs");
