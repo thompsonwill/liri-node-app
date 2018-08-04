@@ -30,7 +30,7 @@ if (command === "my-tweets") {
     client.get('statuses/user_timeline', function (error, tweets, response) {
         if (!error) {
             for (var i = 0; i < tweets.length; i++) {
-                console.log("My Tweets: \n" + tweets[i].text + "\n" + "Created at: " + tweets[i].created_at);
+                console.log("Tweet: \n" + tweets[i].text + "\n" + "Created at: " + tweets[i].created_at);
             }  // end for loop
         }
     }); // end get request
